@@ -20,3 +20,7 @@ Machine Learning platform running GPU workloads on Kubernetes.
 - Prometheus & Grafana (later stages)
 
 ## Project Structure
+
+## Terraform State
+This project uses a remote Terraform state with S3 backend and DynamoDB locking.
+

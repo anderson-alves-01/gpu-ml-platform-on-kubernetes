@@ -1,8 +1,9 @@
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 module "vpc" {
-  source      = "../../modules/vpc"
-  cidr_block  = "10.0.0.0/16"
+  source     = "../../modules/vpc"
+  region     = var.region
+  cidr_block = var.cidr_block
 }
